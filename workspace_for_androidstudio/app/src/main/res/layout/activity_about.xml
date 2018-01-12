@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    xmlns:test2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zhibaowang.ui.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.zhibaowang.component.ZButton
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_left="@drawable/about_the_icon"
+            test:text_left="@string/string_about"
+            test:textsize="20sp"
+            android:onClick="back"/>
+        <com.zhibaowang.component.ZButton
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            test:img_center="@drawable/keep_logo"
+            test:text_center="版本号10.1.8"
+            test:orientation="vertical"
+            test:percent_bitmap_center="0.7"
+            test:w_space="10dp"
+            test:textsize="15sp"/>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_banbengengxin"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="检测更新"
+            test:text_right="已是最新版" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_banbenshuoming"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="版本说明" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_pingfen"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="去评分"/>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_shiyongzhinan"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="版本信息"/>
+
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_mymessage"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="服务协议" />
+    </LinearLayout>
+</FrameLayout>

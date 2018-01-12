@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">中国质保网</string>
+
+    <!-- Strings related to login -->
+    <string name="string_username">账户</string>
+    <string name="string_password_hint">密码</string>
+    <string name="string_sign_in_button">登 录</string>
+    <string name="string_register_button">注 册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">账号错误</string>
+    <string name="error_invalid_password">密码长度过短</string>
+    <string name="error_incorrect_password">密码错误或者该账户不存在!</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="string_forget_password">忘记密码</string>
+    <string name="string_register">注册账号</string>
+    <string name="string_login_failed">登录失败</string>
+    <string name="string_login_success">登录成功!</string>
+    <string name="string_register_failed">登录失败</string>
+    <string name="string_register_success">登录成功!</string>
+    <string name="string_auth_success">获取验证码成功</string>
+    <string name="string_auth_failed">获取验证码失败</string>
+    <string name="string_auth">获取验证码</string>
+    <string name="string_get_auth">获取验证码</string>
+    <string name="string_username_hint">输入登录账号</string>
+    <string name="string_else"> 或 </string>
+    <string name="string_login_qq">&#160;QQ登录</string>
+    <string name="string_login_wechat">&#160;微信登录</string>
+    <string name="string_login_weibo">&#160;微博登录</string>
+    <string name="string_please_input_phone_number">输入您的手机号</string>
+    <string name="string_please_input_authcode">输入验证码</string>
+    <string name="string_message_uploadbill">上传票据\n说明文字</string>
+    <string name="string_or">或者从</string>
+    <string name="string_choose_photo">选择图片</string>
+    <string name="string_choose_file">选择文件</string>
+    <string name="string_next_step">下一步</string>
+    <string name="string_take_photo">扫描拍摄</string>
+    <string name="title_activity_wxentry">WXEntryActivity</string>
+    <string name="string_after_fiew_seconds">秒后获取</string>
+    <string name="string_rechoosephoto">重新选择照片</string>
+    <string name="string_retakephoto">重新拍照</string>
+    <string name="string_takemessage">提取文字</string>
+    <string name="string_hardware_dose_not_support">摄像机不支持!</string>
+    <string name="string_starttakemessagefromaphoto">开始提取照片信息</string>
+    <string name="title_activity_password">PasswordActivity</string>
+    <string name="string_confirmchangingpassword">确认修改</string>
+    <string name="string_resetpassword_success">密码修改成功</string>
+    <string name="string_resetpassword_failed">密码修改失败</string>
+    <string name="string_save">保存</string>
+    <string name="string_login">登录</string>
+    <string name="string_settings">设置</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_my_invoice">MyInvoiceActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="string_zilirenzheng">资历认证</string>
+    <string name="string_shiyongzhinan">使用指南</string>
+    <string name="string_yiwancheng">已完成</string>
+    <string name="string_mymessage">我的信息</string>
+    <string name="string_myselection">我的收藏</string>
+    <string name="string_active">活动</string>
+    <string name="string_mywallet">我的钱包</string>
+    <string name="string_xinyongjifen">信用积分</string>
+    <string name="stirng_xiangxixinxi">编辑详细信息</string>
+    <string name="string_gerenzhongxin">个人中心</string>
+    <string name="string_about">关于</string>
+    <string name="string_anywords">某信息</string>
+    <string name="string_edituserinfo">编辑个人信息</string>
+    <string name="string_bindingphonenumber">手机号码</string>
+    <string name="string_notbinding">未绑定</string>
+    <string name="string_qq">QQ</string>
+</resources>

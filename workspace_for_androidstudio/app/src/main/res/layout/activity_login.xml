@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:padding="15dp"
+    tools:context="com.zhibaowang.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:layout_width="33dp"
+            android:layout_height="21dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/arrow"
+            android:onClick="onBackClick" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/picture_logo" />
+
+        <FrameLayout
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_login"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:tabIndicatorColor="@color/mainthemecolor"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/mainthemecolor"
+                app:tabTextAppearance="@style/tablayout_login"
+                app:tabTextColor="@color/textcolor_unselected" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_login"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:requiresFadingEdge="none" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#e3e3e3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="@string/string_else"
+                android:textColor="#e3e3e3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="#e3e3e3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zhibaowang.component.ZButton
+                    android:id="@+id/button_qqlogin"
+                    style="@style/style_button_login_otherway"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:img_center="@drawable/qq_registration"
+                    app:text_center="@string/string_login_qq" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zhibaowang.component.ZButton
+                    android:id="@+id/button_weibologin"
+                    style="@style/style_button_login_otherway"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:img_center="@drawable/weibo_registered"
+                    app:text_center="@string/string_login_weibo" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.zhibaowang.component.ZButton
+                    android:id="@+id/button_wxlogin"
+                    style="@style/style_button_login_otherway"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:img_center="@drawable/wechat_registered"
+                    app:text_center="@string/string_login_wechat" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Login progress -->
+    <FrameLayout
+        android:id="@+id/login_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>

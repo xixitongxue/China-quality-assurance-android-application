@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhibaowang.app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 短信验证登陆功能需要添加次权限来自动填充验证码，用不到可以去掉 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- To auto-complete the emtext_centertext field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    //接收IM消息的自定义权限
+    <permission
+        android:name="com.zhibaowang.app.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+    //使用接收IM消息权限
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.hongboheshi.app.permission.RECEIVE_MSG" />
+    //接收来电的自定义权限
+    <permission
+        android:name="com.zhibaowang.app.permission.INCOMING_CALL"
+        android:protectionLevel="signature" />
+    //使用接收来电权限
+    <uses-permission android:name="com.hongboheshi.app.permission.INCOMING_CALL" />
+    //以下为必选配置
+    //允许程序打开网络sockets
+    <uses-permission android:name="android.permission.INTERNET" />
+    //允许程序访问有关的网络信息
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //允许程序访问Wi-Fi网络状态信息
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //允许应用读写用户的外部存储器
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //允许读取电话的状态
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //允许程序录制音频
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    //允许应用程序修改全局声音设置的权限
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    //允许使用PowerManager的WakeLocks在进程休眠时能够后台保持
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    //允许请求访问使用照相设备(如果使用视频通话则必选配置)
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".HongboheshiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ShareSDK的activity -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 集成line客户端登录授权，需要添如下格式的过滤器 -->
+            <intent-filter>
+                <data android:scheme="line.1477692153" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106501057" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.zhibaowang.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhibaowang.ui.LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.zhibaowang.ui.ScanBillActivity" />
+        <activity
+            android:name="com.zhibaowang.ui.PasswordActivity"
+            android:label="@string/title_activity_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zhibaowang.ui.UserActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.zhibaowang.ui.MyInvoiceActivity"
+            android:label="@string/title_activity_my_invoice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.zhibaowang.ui.UserCenterActivity"
+            android:label="@string/title_activity_settings"></activity>
+        <activity android:name="com.zhibaowang.ui.SystemSettingsActivity"></activity>
+        <activity android:name="com.zhibaowang.ui.AboutActivity"></activity>
+        <activity
+            android:name="com.zhibaowang.test.TestActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.zhibaowang.ui.CalendarActivity"></activity>
+    </application>
+
+</manifest>

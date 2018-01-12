@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    xmlns:test2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zhibaowang.ui.SystemSettingsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.zhibaowang.component.ZButton
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_left="@drawable/about_the_icon"
+            test:text_left="@string/string_settings"
+            test:textsize="20sp"
+            android:onClick="back"/>
+
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_xinyongjifen"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="账号管理" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_wodeqianbao"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="手机号"
+            test:text_right="15901517259" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_huodong"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="启动位置">
+            <com.zhibaowang.component.ZButton
+                android:id="@+id/checkbox_systemsettings"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="30dp"
+                test:img_center_choose="@drawable/choose_ckecked_yes_ok"
+                test:w_border="1dp"
+                test:radius="3dp"
+                test:color_border="@color/color_border"
+                test:percent_bitmap_center="1"
+                test:isautochange="true"
+                />
+        </com.zhibaowang.component.ZButton>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_shiyongzhinan"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="默认币种">
+
+            <com.zhibaowang.component.ZSpinner
+                android:id="@+id/spinner_systemsettings"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="30dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="120dp"
+                test:img_right_zspinner="@drawable/triangle_icon"
+                test:percent_img_right_zspinner="0.8"
+                test:radius_spinner="3dp"
+                test:color_back_spinner="@color/white"/>
+        </com.zhibaowang.component.ZButton>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_mymessage"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="求助反馈" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_zilirenzheng"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            android:onClick="guanyu"
+            test:text_left="关于" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_phonenumber"
+            style="@style/style_button_settingpage"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="退出登录"
+            android:onClick="exitLogin"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_dialog_exit"
+        ></include>
+</FrameLayout>

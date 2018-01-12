@@ -1,0 +1,217 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 首页（第一级页面不让Activity透明） -->
+    <style name="mainPageStyle" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- 非首页（非第一级页面让Activity透明） -->
+    <style name="otherPageStyle" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/titlecolor</item>
+        <item name="colorPrimaryDark">@color/titlecolor</item>
+        <item name="colorAccent">@color/titlecolor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="test">
+        <item name="android:textSize">16px</item>
+    </style>
+
+    <style name="progressbar">
+        <item name="android:indeterminateDrawable">@drawable/progressbar</item>
+    </style>
+
+    <style name="style_button_signin">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/button_login_selector</item>
+    </style>
+
+    <style name="style_textview_upload">
+        <item name="android:textColor">@color/color_border</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:background">@drawable/shape_textview_upload</item>
+    </style>
+
+    <style name="style_button_upload" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/color_border</item>
+        <item name="textsize">15sp</item>
+        <item name="android:background">@drawable/button_selector_upload</item>
+        <item name="textcolor_choose">@color/color_border</item>
+        <item name="textcolor">@color/color_border</item>
+        <item name="w_space">7dp</item>
+    </style>
+
+    <style name="style_button_login_otherway" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textsize">15sp</item>
+        <item name="w_space">5dp</item>
+        <item name="percent_bitmap_center">0.8</item>
+        <item name="orientation">horizontal</item>
+        <item name="textcolor">@color/color_text_gray</item>
+    </style>
+
+    <style name="style_button_upload_topthree" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor_choose">@color/white</item>
+        <item name="textcolor">@color/color_border</item>
+        <item name="orientation">vertical</item>
+        <item name="textsize">13sp</item>
+        <item name="percent_bitmap_center">0.4</item>
+        <item name="img_back_choose">@drawable/button_load_topthree_press</item>
+        <item name="img_back">@drawable/button_load_topthree_unpress</item>
+        <item name="w_space">1dp</item>
+    </style>
+
+    <style name="style_button_upload_bottomtwo" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor_choose">@color/white</item>
+        <item name="textcolor">@color/white</item>
+        <item name="orientation">center</item>
+        <item name="textsize">15sp</item>
+        <item name="percent_bitmap_center">0.5</item>
+        <item name="radius">4dp</item>
+        <item name="w_border">1px</item>
+        <item name="color_back_choose">#22c064</item>
+        <item name="color_back">#061821</item>
+        <item name="color_border_choose">#22c064</item>
+        <item name="color_border">@color/white</item>
+    </style>
+
+    <style name="style_button_userpage" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor">@color/textcolor_unselected</item>
+        <item name="textsize">17sp</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="radius">3dp</item>
+        <item name="w_border">1dp</item>
+        <item name="color_border">@color/color_border</item>
+        <item name="color_back">@color/white</item>
+        <item name="color_back_click">@color/black_helf</item>
+        <item name="percent_bitmap_left">0.6</item>
+        <item name="percent_bitmap_right">0.35</item>
+    </style>
+
+
+    <style name="style_button_settingpage" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor">@color/textcolor_unselected</item>
+        <item name="textsize">17sp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="radius">3dp</item>
+        <item name="w_border">1dp</item>
+        <item name="color_border">@color/color_border</item>
+        <item name="color_back">@color/white</item>
+        <item name="color_back_click">@color/black_helf</item>
+        <item name="percent_bitmap_left">0.35</item>
+        <item name="percent_bitmap_right">0.35</item>
+        <item name="img_right">@drawable/arrow_icon</item>
+    </style>
+
+    <style name="style_button_bottom_scan_bill_activity" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor_choose">@color/mainthemecolor</item>
+        <item name="textcolor">@color/white</item>
+        <item name="orientation">horizontal</item>
+        <item name="textsize">15sp</item>
+        <item name="percent_bitmap_center">0.5</item>
+    </style>
+
+    <style name="style_button_center_choosephoto" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="orientation">horizontal</item>
+        <item name="textsize">20sp</item>
+        <item name="percent_bitmap_center">0.5</item>
+        <item name="color_border_choose">#11000000</item>
+        <item name="color_border">#11000000</item>
+        <item name="w_border">1dp</item>
+        <item name="radius">5dp</item>
+    </style>
+    <style name="style_button_calendar" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="orientation">horizontal</item>
+        <item name="textsize">15sp</item>
+        <item name="percent_bitmap_center">0.5</item>
+        <item name="color_border_choose">#11000000</item>
+        <item name="color_border">#11000000</item>
+        <item name="w_border">1dp</item>
+        <item name="radius">5dp</item>
+    </style>
+
+    <style name="style_button_upload_bottomtwo_takephoto" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="textcolor_choose">@color/mainthemecolor</item>
+        <item name="textcolor">@color/white</item>
+        <item name="orientation">horizontal</item>
+        <item name="textsize">15sp</item>
+        <item name="percent_bitmap_center">0.5</item>
+    </style>
+
+    <style name="style_button_gotosigninpage">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/button_gotosigninpage_selector</item>
+    </style>
+
+
+    <style name="style_button_authcode">
+        <item name="android:textColor">#2fb261</item>
+        <item name="android:background">@drawable/button_authcode_unpress</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="textview_login_register">
+        <item name="icon_height">30dp</item>
+        <item name="icon_width">30dp</item>
+        <item name="corner_radius">5dp</item>
+        <item name="border_width_normal">1px</item>
+        <item name="border_color_normal">#cccfce</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColor">#717171</item>
+        <item name="android:textColorHint">#e3e3e3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">38dp</item>
+        <item name="android:background">@drawable/shape_textview_login</item>
+    </style>
+    <style name="style_textview_edituserinfo">
+        <item name="icon_height">30dp</item>
+        <item name="icon_width">30dp</item>
+        <item name="corner_radius">5dp</item>
+        <item name="border_width_normal">1px</item>
+        <item name="border_color_normal">#cccfce</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColor">@color/color_border</item>
+        <item name="android:textColorHint">#e3e3e3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">38dp</item>
+        <item name="android:background">@drawable/shape_textview_login</item>
+    </style>
+
+    <style name="tablayout_login">
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <color name="color_text_gray">#717171</color>
+    <color name="black_helf">#05000000</color>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="style_item_settings">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

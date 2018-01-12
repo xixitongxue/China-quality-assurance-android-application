@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#717171</color>
+    <color name="colorPrimaryDark">#717171</color>
+    <color name="colorAccent">#020e07</color>
+    <color name="titlecolor">#020e07</color>
+    <color name="color_auth">#2fb261</color>
+    <color name="mainthemecolor">#2bb161</color>
+    <color name="mainthemecolor2">#4bb65f</color>
+    <color name="textcolor_unselected">#717171</color>
+    <color name="textcolor_dialog_exit">#89898a</color>
+    <color name="darkwhite">#dbdede</color>
+    <color name="white">#ffffff</color>
+    <color name="color_stroke_textview">#cccfce</color>
+    <color name="color_border">#55000000</color>
+    <color name="black">#000000</color>
+    <color name="color_dialog_back">#44000000</color>
+</resources>

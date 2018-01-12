@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="#061721"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhibaowang.component.ZButton
+                android:id="@+id/button_bottom_retakemessage"
+                style="@style/style_button_bottom_scan_bill_activity"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                test:text_center="@string/string_retakephoto" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhibaowang.component.ZButton
+                android:id="@+id/button_bottom_save_bill"
+                style="@style/style_button_bottom_scan_bill_activity"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                test:text_center="@string/string_save" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.zhibaowang.component.ZButton
+                android:id="@+id/button_bottom_check_bill"
+                style="@style/style_button_bottom_scan_bill_activity"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                test:text_center="检验真伪" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

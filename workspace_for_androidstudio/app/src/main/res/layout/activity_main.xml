@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <com.zhibaowang.component.ZViewPager
+        android:id="@+id/zviewpager_back_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/frame_title"
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_gravity="top"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp">
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="22dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/logo" />
+
+        <Button
+            android:id="@+id/button_gotosigninpage"
+            style="@style/style_button_gotosigninpage"
+            android:layout_width="46dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|right"
+            android:onClick="login"
+            android:text="@string/string_sign_in_button" />
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_gotouserpage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top|right"
+            android:visibility="invisible"
+            android:onClick="goToUserCenterPage"
+            test:percent_bitmap_center="1"
+            test:drawcircleborder="true"
+            test:drawcircleimg="true"
+            test:img_center_choose="@drawable/beauty_face"
+            test:color_circle_border="#ddffffff"/>
+
+        <ImageView
+            android:layout_width="292dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/title" />
+
+    </FrameLayout>
+
+    <com.zhibaowang.component.ZViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="213dp"></com.zhibaowang.component.ZViewPager>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="56dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="#061721"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            test:img_center_choose="@drawable/individual_choose"
+            test:img_center="@drawable/individual_unchoose"
+            test:textsize="20sp"
+            test:text_center="个 人"
+            test:textcolor_choose="#22c064"
+            test:textcolor="#c8cbcb" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_enterprise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            test:img_center_choose="@drawable/enterprise_choose"
+            test:img_center="@drawable/enterprise_unchoose"
+            test:textsize="20sp"
+            test:text_center="企 业"
+            test:textcolor_choose="#22c064"
+            test:textcolor="#c8cbcb" />
+
+    </LinearLayout>
+
+</FrameLayout>

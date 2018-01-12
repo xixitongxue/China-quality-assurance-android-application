@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.zhibaowang.test.TestActivity"
+    >
+
+    <!--com.zhibaowang.component.ZButton
+        android:id="@+id/zbutton_test"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        app:textarr="QRCode|1234567|15你好"
+        app:textsize="40sp"
+        app:w_space="5dp"
+        app:orientation="vertical"
+        app:drawtextborder="true"
+        app:textcolor="@color/white"
+        app:w_space_text="10dp"
+        app:color_text_border="@color/black"
+        app:color_back="#66ccff"
+        android:layout_gravity="center"></com.zhibaowang.component.ZButton-->
+    <com.zhibaowang.component.ZBoxView
+        android:id="@+id/zshowview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

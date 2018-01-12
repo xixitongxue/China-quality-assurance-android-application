@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.zhibaowang.ui.UserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:layout_width="33dp"
+            android:layout_height="21dp"
+            android:background="@drawable/arrow"
+            android:onClick="onBackClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/string_edituserinfo"
+            android:textColor="@color/mainthemecolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_border_round"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_user_icon"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="1dp"
+            test:color_back="@color/mainthemecolor"
+            test:drawcircleborder="true"
+            test:drawcircleimg="true"
+            test:img_center="@drawable/usericon"
+            test:orientation="vertical"
+            test:percent_bitmap_center="0.4"
+            test:percent_h="0.1"
+            test:radius_lefttop_x="5dp"
+            test:radius_lefttop_y="5dp"
+            test:radius_righttop_x="5dp"
+            test:radius_righttop_y="5dp"
+            test:textarr="昵称 某信息"
+            test:textcolor="@color/white"
+            test:textsize="17sp"
+            test:w_space="5dp"
+            test:w_space_text="7sp"
+            test:w_border="3dp"/>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_name"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            test:text_left="姓名">
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/darkwhite"
+                android:hint="输入您的姓名"
+                android:textSize="15sp"
+                android:background="@color/white" />
+        </com.zhibaowang.component.ZButton>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_gender"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            test:text_left="性别">
+
+            <com.zhibaowang.component.ZSpinner
+                android:id="@+id/spinner_usergender"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="5dp"
+                android:dropDownWidth="120dp"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                test:color_back_spinner="@color/white"
+                test:img_right_zspinner="@drawable/triangle_icon"
+                test:percent_img_right_zspinner="0.8"
+                test:radius_spinner="5dp" />
+        </com.zhibaowang.component.ZButton>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_birthday"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="生日">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="5dp"
+                android:textSize="15sp"/>
+        </com.zhibaowang.component.ZButton>
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_bindingphonenumber"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="@string/string_bindingphonenumber"
+            test:text_right="@string/string_notbinding" />
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_bindingqq"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="@string/string_qq"
+            test:text_right="@string/string_notbinding" />
+
+        <com.zhibaowang.component.ZButton
+            android:id="@+id/button_something"
+            style="@style/style_button_userpage"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            test:img_right="@drawable/arrow_icon"
+            test:text_left="@string/string_anywords"
+            test:text_right="某信息" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

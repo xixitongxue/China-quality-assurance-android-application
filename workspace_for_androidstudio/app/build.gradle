@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.zhibaowang.app"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.google.zxing:core:3.3.0'
+    implementation files('libs/commons-httpclient-3.1.jar')
+    implementation files('libs/MobCommons-2017.1024.1907.jar')
+    implementation files('libs/MobTools-2017.1024.1907.jar')
+    implementation files('libs/ShareSDK-Alipay-3.1.1.jar')
+    implementation files('libs/ShareSDK-Alipay-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Alipay-Moments-3.1.1.jar')
+    implementation files('libs/ShareSDK-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Dingding-3.1.1.jar')
+    implementation files('libs/ShareSDK-Douban-3.1.1.jar')
+    implementation files('libs/ShareSDK-Dropbox-3.1.1.jar')
+    implementation files('libs/ShareSDK-Email-3.1.1.jar')
+    implementation files('libs/ShareSDK-Evernote-3.1.1.jar')
+    implementation files('libs/ShareSDK-Facebook-3.1.1.jar')
+    implementation files('libs/ShareSDK-FacebookMessenger-3.1.1.jar')
+    implementation files('libs/ShareSDK-Flickr-3.1.1.jar')
+    implementation files('libs/ShareSDK-Foursquare-3.1.1.jar')
+    implementation files('libs/ShareSDK-GooglePlus-3.1.1.jar')
+    implementation files('libs/ShareSDK-Instagram-3.1.1.jar')
+    implementation files('libs/ShareSDK-Instapaper-3.1.1.jar')
+    implementation files('libs/ShareSDK-KaiXin-3.1.1.jar')
+    implementation files('libs/ShareSDK-Kakao-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-KakaoStory-3.1.1.jar')
+    implementation files('libs/ShareSDK-KakaoTalk-3.1.1.jar')
+    implementation files('libs/ShareSDK-Line-3.1.1.jar')
+    implementation files('libs/ShareSDK-Linkedin-3.1.1.jar')
+    implementation files('libs/ShareSDK-Meipai-3.1.1.jar')
+    implementation files('libs/ShareSDK-Mingdao-3.1.1.jar')
+    implementation files('libs/ShareSDK-Pinterest-3.1.1.jar')
+    implementation files('libs/ShareSDK-Pocket-3.1.1.jar')
+    implementation files('libs/ShareSDK-QQ-3.1.1.jar')
+    implementation files('libs/ShareSDK-QZone-3.1.1.jar')
+    implementation files('libs/ShareSDK-Renren-3.1.1.jar')
+    implementation files('libs/ShareSDK-ShortMessage-3.1.1.jar')
+    implementation files('libs/ShareSDK-SinaWeibo-3.1.1.jar')
+    implementation files('libs/ShareSDK-TencentWeibo-3.1.1.jar')
+    implementation files('libs/ShareSDK-Tumblr-3.1.1.jar')
+    implementation files('libs/ShareSDK-Twitter-3.1.1.jar')
+    implementation files('libs/ShareSDK-VKontakte-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Favorite-3.1.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-3.1.1.jar')
+    implementation files('libs/ShareSDK-WhatsApp-3.1.1.jar')
+    implementation files('libs/ShareSDK-Yixin-3.1.1.jar')
+    implementation files('libs/ShareSDK-Yixin-Core-3.1.1.jar')
+    implementation files('libs/ShareSDK-Yixin-Moments-3.1.1.jar')
+    implementation files('libs/ShareSDK-YouDao-3.1.1.jar')
+    implementation files('libs/ShareSDK-Youtube-3.1.1.jar')
+    implementation files('libs/jpct_ae.jar')
+}
